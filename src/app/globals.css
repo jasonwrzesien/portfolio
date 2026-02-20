@@ -60,6 +60,82 @@ textarea,
   cursor: url("/cursors/cursor-text.png") 24 24, text !important;
 }
 
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.prestart-bg {
+  background:
+    linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
+    repeating-linear-gradient(
+      90deg,
+      rgba(76, 76, 76, 0.34) 0 8px,
+      rgba(46, 46, 46, 0.22) 8px 16px,
+      rgba(62, 62, 62, 0.28) 16px 24px,
+      rgba(40, 40, 40, 0.22) 24px 32px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.04) 0 1px,
+      transparent 1px 32px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.04) 0 1px,
+      transparent 1px 56px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0 28px,
+      rgba(255, 255, 255, 0.05) 28px 29px,
+      transparent 29px 56px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(15, 15, 15, 0.45) 0 2px,
+      transparent 2px 56px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(18, 18, 18, 0.55) 0 2px,
+      transparent 2px 32px
+    ),
+    linear-gradient(140deg, #505050 0%, #353535 48%, #242424 100%);
+  background-size:
+    100% 100%,
+    100% 100%,
+    100% 32px,
+    56px 100%,
+    56px 32px,
+    56px 32px,
+    56px 32px,
+    100% 100%;
+  background-position:
+    0 0,
+    0 0,
+    0 0,
+    0 0,
+    28px 16px,
+    0 16px,
+    0 0,
+    0 0;
+  image-rendering: pixelated;
+  filter: saturate(0.72) contrast(1.05);
+}
+
+.prestart-vignette {
+  background:
+    radial-gradient(circle at center, rgba(0, 0, 0, 0.06) 22%, rgba(0, 0, 0, 0.58) 100%),
+    linear-gradient(180deg, rgba(8, 8, 10, 0.3) 0%, rgba(8, 8, 10, 0.08) 34%, rgba(8, 8, 10, 0.36) 100%);
+}
+
 .arcade-intro-box {
   position: relative;
   background: #121212;
@@ -139,4 +215,25 @@ textarea,
         transparent 15px 19px
       )
       top right 2px / 2px 100% no-repeat;
+}
+
+.pixel-tail-1 {
+  right: 54px;
+  bottom: -10px;
+  width: 12px;
+  height: 12px;
+}
+
+.pixel-tail-2 {
+  right: 44px;
+  bottom: -18px;
+  width: 12px;
+  height: 12px;
+}
+
+.pixel-tail-3 {
+  right: 34px;
+  bottom: -26px;
+  width: 10px;
+  height: 10px;
 }
